@@ -1,0 +1,18 @@
+{
+  "name": "humanremoteclicker",
+  "version": "1.0.0",
+  "description": "Real-Time Signaling during Presentation as Mobile Web App",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D1no/human-remote-clicker.git"
+  },
+  "author": "Dino Scheidt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D1no/human-remote-clicker/issues"
+  },
+  "homepage": "https://github.com/D1no/human-remote-clicker#readme"
+}
