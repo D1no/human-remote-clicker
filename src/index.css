@@ -5,7 +5,7 @@
 
 /** Neumorphism Button*/
 .NeuButton {
-  border-radius: 50px;
+  border-radius: 100%;
   background: linear-gradient(145deg, #ffffff, #d6d9dd);
   box-shadow:  20px 20px 60px #cacdd1,
              -20px -20px 60px #ffffff;
