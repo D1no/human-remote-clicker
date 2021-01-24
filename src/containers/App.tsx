@@ -64,24 +64,24 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <SuspenseWithPerf
-          fallback={"loading burrito status..."}
-          traceId={"load-burrito-status"}
-        >
+    <SuspenseWithPerf fallback={"loading..."} traceId={"load-nextslideplz-app"}>
+      <div className="h-full w-screen m-0 flex bg-gray-200">
+        <div className="self-center mx-auto">
+          <div>NEXT</div>
+
           <button
-            className="NeuButton w-96 h-96 flex justify-center cursor-pointer"
+            className="bg-gradient-to-br from-white to-neogray rounded-full shadow-neomorphic-light w-96 h-96 flex justify-center cursor-pointer"
             onClick={handleClick}
           >
             <Tap />
           </button>
-        </SuspenseWithPerf>
-        <div className="text-base italic p-10 text-gray-400">
-          by Dino Scheidt
+
+          <div className="text-base italic p-10 text-gray-400">
+            by Dino Scheidt
+          </div>
         </div>
-      </header>
-    </div>
+      </div>
+    </SuspenseWithPerf>
   );
 }
 
