@@ -16,7 +16,7 @@
     margin: 0;
   }
 
-  /* AppLayout Golden Ratio Split*/
+  /* AppLayout: Golden Ratio Split */
   .flex-golden {
     flex-grow: 1.618003;
     flex-shrink: 1.618003;
@@ -34,4 +34,5 @@
   .flex-basis-l {
     flex-basis: 5rem;
   }
+
 }
