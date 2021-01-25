@@ -2,13 +2,13 @@ import React from "react";
 
 type AppLayoutProps = {
   /** Navigation layout section with default size (flex basis). */
-  nav: React.Component;
+  nav: React.ReactElement;
   /** Top layout section of main content (golden ratio grow). */
-  top: React.Component;
+  top: React.ReactElement;
   /** Bottom layout section of main content (golden ratio shrink). */
-  bottom: React.Component;
+  bottom: React.ReactElement;
   /** Footer layout section with default size (flex basis). */
-  footer: React.Component;
+  footer: React.ReactElement;
   /** Displays a background color behind layout sections for debugging. */
   debugView: boolean;
 } & typeof defaultProps;
