@@ -1,10 +1,37 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-#root, html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
+/* App Background Color 
+ * Is set as a TailwindCss Class in the HTML Template! */
+
+@layer base {
+
+  /* Make App Fullscreen */
+  #root,
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* AppLayout Golden Ratio Split*/
+  .flex-golden {
+    flex-grow: 1.618003;
+    flex-shrink: 1.618003;
+    flex-basis: 0;
+  }
+
+  .flex-basis-s {
+    flex-basis: 2rem;
+  }
+
+  .flex-basis {
+    flex-basis: 3rem;
+  }
+
+  .flex-basis-l {
+    flex-basis: 5rem;
+  }
 }
