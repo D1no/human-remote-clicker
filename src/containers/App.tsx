@@ -5,6 +5,7 @@ import {
   useDatabase,
   useDatabaseObjectData,
 } from "reactfire";
+import AppLayout from "../components/AppLayout";
 
 import logo from "./logo.svg";
 
@@ -65,9 +66,18 @@ function App() {
 
   return (
     <SuspenseWithPerf fallback={"loading..."} traceId={"load-nextslideplz-app"}>
-      <div className="h-full w-screen m-0 flex bg-gray-200">
+          <AppLayout debugView 
+            bottom={
+              <button
+                className="mx-auto bg-gradient-to-br from-white to-neogray rounded-full shadow-neomorphic-light flex justify-center cursor-pointer"
+                onClick={handleClick}
+              >
+                <Tap />
+              </button>
+            }
+          />
+{/*       <div className="h-full w-screen m-0 flex bg-gray-200">
         <div className="self-center mx-auto">
-          <div>NEXT</div>
 
           <button
             className="bg-gradient-to-br from-white to-neogray rounded-full shadow-neomorphic-light w-96 h-96 flex justify-center cursor-pointer"
@@ -80,7 +90,7 @@ function App() {
             by Dino Scheidt
           </div>
         </div>
-      </div>
+      </div> */}
     </SuspenseWithPerf>
   );
 }
